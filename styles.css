@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+body{
+    min-width: 320px;
+
+}
+header{
+    background-image: url(/src/1principal.png);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+}
+
+header div{
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+header p{
+    background-color: rgba(114, 153, 254, 0.5);
+    border-radius: 10px;
+    width: 32%;
+    color: white;
+    font-weight: bold;
+    margin-left: 8rem;
+    padding: .8rem;
+    margin: 5rem;
+    margin-top: 7rem;
+    line-height: 150%;
+    font-size: smaller;
+}
+h1{
+    text-align: center;
+    padding: 2rem;
+}
+
+#about{
+    background-color: #7299FE;
+    color: #fff;
+
+}
+#about h1{
+    color: #1D06A7;
+}
+#about p{
+    margin: 0rem 1.5rem 1.5rem 2rem;
+    font-size: small;
+    line-height: 150%;
+}
+
+#about button{
+    padding:  1em;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: #D16FFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 1.5rem;
+    margin-bottom: 3rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: xx-small;
+}
+
+#about button:hover{
+    background-color: #9022FF;
+}
+
+/* ---------skills section ---------*/
+
+#skill{
+    background-color: #9022FF;
+    height: 50%;
+    padding-bottom: 10%;
+    }
+#skill-bars{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 0;
+}
+
+#skill h1{
+    color: #26CC4B;
+}
+#skill p{
+    width: 40%;
+    margin: 0rem 1.5rem 1.5rem 1.5rem;
+    font-size: medium;
+    line-height: 150%;
+    color: #fff;
+}
+
+#skill p{
+    font-size: medium;
+    font-weight: 200;
+}
+
+/* barras de progreso */
+
+:root{
+    --bar-color: #57EFF9;
+    --fillsize: 0%;
+
+}
+
+.progress-bar-1, .progress-bar-2, .progress-bar-3, .progress-bar-4, .progress-bar-5, .progress-bar-6{
+    position: relative;
+    width: 150px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 2em;
+    overflow: hidden;
+    margin-bottom: 6%;
+}
+
+/* barra 1  */
+.progress-bar-1::before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-bar 0.8s 0.3s ease-in-out forwards;
+}
+
+/* barra 2  */
+.progress-bar-2::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-bar 0.8s 0.3s ease-in-out forwards;
+}
+
+/* barra 3 */
+.progress-bar-3::before{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-bar 0.8s 0.3s ease-in-out forwards;
+}
+/* barra 4 */
+
+.progress-bar-4::before{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-bar 0.8s 0.3s ease-in-out forwards;
+}
+
+/* barra 5 */
+.progress-bar-5::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-bar 0.8s 0.3s ease-in-out forwards;
+}
+
+/* barra 6 */
+.progress-bar-6::before{
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-bar 0.8s 0.3s ease-in-out forwards;
+}
+
+
+@keyframes fill-bar {
+    to {
+        transform: translateX(var(--fill-size))
+    }
+    
+}
+/* ---- */
+
+/* ---------termina skills section ---------*/
+
+
+/* portfolio section */
+#portfolio{
+    background-color: #FFD233;
+}
+#portfolio h1{
+    color: #00AD84;
+}
+
+#container{
+    padding: 1% 5% 10% 8%;
+}
+#container img{
+    padding: 0.2%;
+}
+/* client section */
+#client{
+    background-color: #3F4E62;
+}
+
+#client h1{
+    color:  #ADFF28;
+}
+
+#container-img{
+    padding: 0% 10% 8% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container-img img{
+    width: 23%;
+    margin: 10px
+}
+
+
+/* contact section */
+
+#contact{
+    background-color: #1687A0;
+}
+
+#contact h1{
+    color: red;
+}
+
+#inputs{
+    margin:0 1% 0% 5%;
+    padding-right: 2%
+}
+
+#inputs .info{
+    border: 0;
+    width: 40%;
+    padding: 2.5%;
+    margin:1.5%;
+}
+
+#inputs .description{
+    border:0;
+    width: 89%;
+    margin:1.5%;
+    padding:2.5%;
+}
+
+#inputs input::placeholder{
+    font-size: 0.7em;
+}
+
+#inputs textarea::placeholder{
+    font-size: 0.7em;
+}
+
+#contact button{
+    padding: 2%;
+    width: 30%;
+    color: #fff;
+    background-color: #233451;
+    border: 0;
+    text-transform: uppercase;
+    font-size:xx-small;
+}
+
+#button{
+    display:flex;
+    justify-content: center;
+    padding: 5% 5% 10% 10%;
+
+}
+
+footer{
+    background-color:  #1797b4;
+    color: #76d0e4;
+    font-family: cursive;
+    padding-left: 1rem;
+    font-size: xx-small ;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 590px) {
+
+    #skill{
+        height: 50%;
+        padding-left: 10%;
+    }
+
+    .progress-bar-1, .progress-bar-2, .progress-bar-3, .progress-bar-4, .progress-bar-5, .progress-bar-6{
+        width: 250px;
+        margin: 5px;
+    }
+
+    #container{
+        padding: 1% 5% 10% 20%;
+    }
+    #container img{
+        padding: 0.2%;
+    }
+
+    footer{
+        font-size: small;
+    }
+}
+
+
+@media only screen and (min-width: 590px) and (max-width: 760px) {
+    
+    body{
+        font-size: medium;
+    }
+    
+    #skill{
+        height: 360px;
+        padding-left: 4%;
+    }
+
+    .progress-bar-1, .progress-bar-2, .progress-bar-3, .progress-bar-4, .progress-bar-5, .progress-bar-6{
+        width: 220px;
+    }
+    #skill-bars{
+        margin-left: 8%;
+    }
+
+    #container{
+        padding: 2% 3% 10% 8%;
+        width: 90%;
+    }
+    #container img{
+        padding: 0.1%;
+    }
+    footer{
+        font-size: medium;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 960px) {
+    
+
+    h1{
+        font-size: xx-large;
+    }
+    header{
+        height: 60vh;
+    }
+    
+    header div{
+        font-size: 4rem;
+    }
+    
+    header p{
+        margin-left: 10rem;
+        padding: 0.7rem;
+        margin: 5rem;
+        margin-top: 7rem;
+        line-height: 120%;
+        font-size: 1.6rem;
+        word-spacing: 0.6em;
+    }
+    #about p{
+        font-size: medium;
+    }
+
+    #about button{
+        padding:  1em;
+        width: 15%;
+        margin-left: 2rem;
+        margin-bottom: 4rem;
+        font-size: small;
+    }
+
+    #skill{
+        height: 420px;
+        padding-left: 2%;
+        /* max-width: 500px; */
+    }
+
+    .progress-bar-1, .progress-bar-2, .progress-bar-3, .progress-bar-4, .progress-bar-5, .progress-bar-6{
+        width: 280px;
+    }
+    #skill-bars{
+        margin-left: 10%;
+    }
+
+    #container{
+        padding: 2% 5% 10% 15%;
+        width: 70%;
+    }
+    #container img{
+        padding: 0.8%;
+    }
+
+    footer{
+        font-size: medium;
+        margin: 0;
+    }
+
+
+    #inputs input::placeholder, #inputs textarea::placeholder{
+        font-size: 1em;
+    }
+
+
+    #contact button{
+        font-size:small;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1920px) {
+
+    #about, #skill, #portfolio, #client, #contact{
+        padding:10%;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+    header{
+        height: 60vh;
+        padding: 10%
+    }
+    
+    header div{
+        font-size: 4rem;
+    }
+    
+    header p{
+        margin-left: 10rem;
+        padding: 0.7rem;
+        margin: 5rem;
+        margin-top: 7rem;
+        line-height: 120%;
+        font-size: 1.6rem;
+        word-spacing: 0.6em;
+    }
+
+    #about p{
+        font-size: large;
+    }
+
+    #about button{
+        padding:  1em;
+        width: 20%;
+        margin-left: 2rem;
+        margin-bottom: 4rem;
+        font-size: medium;
+    }
+
+    #skill{
+        height: 500px;
+        padding-top: 4%;
+        padding-left: 15%;
+    }
+
+    .progress-bar-1, .progress-bar-2, .progress-bar-3, .progress-bar-4, .progress-bar-5, .progress-bar-6{
+        width: 300px;
+    }
+
+    #skill-bars{
+        padding-top: 4%;
+        margin-left: 10%;
+        height: 65%;
+        max-width: 750px;
+    }
+
+    #portfolio{
+        padding:0;
+    }
+
+    #container{
+        padding: 2% 3% 10% 30%;
+        max-width: 750px;
+    }
+    #container img{
+        padding: 1%;
+    }
+
+    #client{
+        padding: 0.5%;
+    }
+
+    footer{
+        font-size: large;
+        margin: 0;
+    }
+
+
+    #inputs input::placeholder, #inputs textarea::placeholder{
+        font-size: 1em;
+    }
+
+
+    #contact button{
+        font-size:small;
+    }
+}
