@@ -285,13 +285,16 @@ h1{
     border: 0;
     text-transform: uppercase;
     font-size:xx-small;
+    cursor: pointer;
+}
+#contact button:hover{
+    background-color: #0e2f67;
 }
 
 #button{
     display:flex;
     justify-content: center;
     padding: 5% 5% 10% 10%;
-
 }
 
 footer{
